@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+reply_1:
+  post_id: 1
+  text: ようこそ！
+
+reply_2:
+  post_id: 2
+  text: 2度目とはめでたい！

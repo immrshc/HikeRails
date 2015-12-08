@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+user_1:
+  id: 1
+  username: ShoichiImamura
+  mail: syoichiimamura@gmail.com
+  password_digest: <%= BCrypt::Password.create('ybrdgaw8') %>
+  token: 0d0871e9c96d93d4
+
+user_2:
+  id: 2
+  username: Shoichi
+  mail: s1210259@u.tsukuba.ac.jp
+  password_digest: <%= BCrypt::Password.create('1106Shoichi') %>
+  token: 265632649d29fd78
+
+user_3:
+  id: 3
+  username: Imamura
+  mail: syoichiimamura@yahoo.com
+  password_digest: <%= BCrypt::Password.create('1106Imamura') %>
+  token: bc131d92d923c398
+
