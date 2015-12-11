@@ -17,32 +17,20 @@ class PostController < ApplicationController
 
 	end
 
-	#このメソッドの時のみ画像のvalidateが実行されるようにする
 	def upload_process
 
 		logger.debug("===================debug===================")
 		logger.debug(session[:post_id])
-		
-		ps = ['image/jpeg', 'image/jpg', 'image/gif', 'image/png']
 
 		if post_id = session[:post_id] then
 			image = params[:image].read
 			ctype = params[:image].content_type
 			post = Post.find_by(id: post_id)
-
-  			if ps.include?(ctype) && image.length < 1.megabyte then
-				if post.update(image: image, ctype: ctype) then
-					@post = post
-					@result = true
-					logger.debug("===================画像を保存===================")
-				else
-					@result = false
-					logger.debug("===================画像を保存できない===================")
-				end		
-			else
-				logger.debug('#{image.ctype}は画像ではありません') 
-	  			logger.debug('#{image.length}のサイズが1MBを超えています')
-				@result = false
+  			
+			if post.update(image: image, ctype: ctype) then
+				@post = post
+				@result = true
+				logger.debug("===================画像を保存===================")
 			end
 		else
 			@result = false
@@ -60,8 +48,9 @@ class PostController < ApplicationController
 		if @post.image && @post.ctype then
 			send_data @post.image, type: @post.ctype, disposition: :inline
 		else
-			@post = Post.find_by(id: 31)
+			@post = Post.find_by(id: 1)
 			send_data @post.image, type: @post.ctype, disposition: :inline
+			#send_data '#{RAILS_ROOT}/', type: @post.ctype, disposition: :inline
 		end
 
 	end
