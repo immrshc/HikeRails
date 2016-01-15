@@ -1,3 +1,5 @@
+require 'net/http'
+
 class Timeline
 	include ActiveModel::Model
 
@@ -11,7 +13,9 @@ class Timeline
 		self.post = post
 		#show_imageメソッドを実行するためのURLを指定する
 		if post.image then
-			self.imageURL = "http://localhost:3000/post/show_image?post[id]=#{post.id}"
+			#self.imageURL = "http://localhost:3000/post/show_image?post[id]=#{post.id}"
+			ipAddress = Net::HTTP.get('ifconfig.me', '/ip').strip!
+			self.imageURL = "http://http://" + ipAddress + ":3000/post/show_image?post[id]=#{post.id}"
 		else
 			self.imageURL = ""
 		end
