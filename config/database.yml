@@ -10,8 +10,16 @@ default: &default
   timeout: 5000
 
 development:
-  <<: *default
-  database: db/development.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  database: Hike
+  pool: 5
+  timeout: 5000
+  username: railsuser
+  password: 1106
+  socket: /tmp/mysql.sock
+  #<<: *default
+  #database: db/development.sqlite3
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -24,6 +32,7 @@ production:
   adapter: mysql2
   encoding: utf8
   database: Hike
+  host: 10.0.2.10
   pool: 5
   timeout: 5000
   username: railsuser
