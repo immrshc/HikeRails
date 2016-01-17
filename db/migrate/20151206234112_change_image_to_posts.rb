@@ -1,9 +1,9 @@
 class ChangeImageToPosts < ActiveRecord::Migration
   def up
-  	change_column :Posts, :image, :binary
+  	change_column :posts, :image, :binary
   end
 
   def down
-  	change_column :Posts, :image, :string
+  	change_column :posts, :image, :string
   end
 end

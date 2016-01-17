@@ -11,48 +11,52 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151208140312) do
-
-  create_table "Posts", force: :cascade do |t|
-    t.integer  "user_id"
-    t.text     "text"
-    t.float    "latitude"
-    t.float    "longitude"
-    t.binary   "image"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "ctype"
-  end
-
-  add_index "Posts", ["user_id"], name: "index_posts_on_user_id"
+ActiveRecord::Schema.define(version: 20160117013929) do
 
   create_table "favorites", force: :cascade do |t|
-    t.integer  "post_id"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.integer  "post_id",    limit: 4
+    t.integer  "user_id",    limit: 4
   end
 
-  add_index "favorites", ["post_id"], name: "index_favorites_on_post_id"
-  add_index "favorites", ["user_id"], name: "index_favorites_on_user_id"
+  add_index "favorites", ["post_id"], name: "index_favorites_on_post_id", using: :btree
+  add_index "favorites", ["user_id"], name: "index_favorites_on_user_id", using: :btree
+
+  create_table "posts", force: :cascade do |t|
+    t.integer  "user_id",    limit: 4
+    t.text     "text",       limit: 65535
+    t.float    "latitude",   limit: 24
+    t.float    "longitude",  limit: 24
+    t.binary   "image",      limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.string   "ctype",      limit: 255
+  end
+
+  add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
 
   create_table "replies", force: :cascade do |t|
-    t.integer  "post_id"
-    t.text     "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text     "text",       limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.integer  "post_id",    limit: 4
   end
 
-  add_index "replies", ["post_id"], name: "index_replies_on_post_id"
+  add_index "replies", ["post_id"], name: "index_replies_on_post_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "username"
-    t.string   "mail"
-    t.string   "password"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-    t.string   "password_digest"
-    t.string   "token"
+    t.string   "username",        limit: 255
+    t.string   "mail",            limit: 255
+    t.string   "password",        limit: 255
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.string   "password_digest", limit: 255
+    t.string   "token",           limit: 255
   end
 
+  add_foreign_key "favorites", "posts"
+  add_foreign_key "favorites", "users"
+  add_foreign_key "posts", "users"
+  add_foreign_key "replies", "posts"
 end

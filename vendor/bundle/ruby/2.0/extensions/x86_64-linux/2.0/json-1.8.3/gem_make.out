@@ -1,0 +1,14 @@
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/json-1.8.3/ext/json
+/usr/bin/ruby2.0 -r ./siteconf20160112-17862-18xsb8n.rb extconf.rb
+creating Makefile
+
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/json-1.8.3/ext/json
+make "DESTDIR=" clean
+rm -f .so  *.o  *.bak mkmf.log .*.time
+
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/json-1.8.3/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/json-1.8.3/ext/json
+make "DESTDIR=" install

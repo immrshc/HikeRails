@@ -1,0 +1,20 @@
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/debug_inspector-0.0.2/ext/debug_inspector
+/usr/bin/ruby2.0 -r ./siteconf20160112-17862-vvhm8e.rb extconf.rb
+creating Makefile
+
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" clean
+rm -f 
+rm -f debug_inspector.so  *.o  *.bak mkmf.log .*.time
+
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR="
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I.   -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC -m64 -o debug_inspector.o -c debug_inspector.c
+rm -f debug_inspector.so
+gcc -shared -o debug_inspector.so debug_inspector.o -L. -L/usr/lib64 -L. -fstack-protector -rdynamic -Wl,-export-dynamic  -m64  -L/usr/lib64/ruby/2.0 -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" install
+/bin/mkdir -p ./.gem.20160112-17862-z5bvx1
+exit > .RUBYARCHDIR.time
+/usr/bin/install -c -m 0755 debug_inspector.so ./.gem.20160112-17862-z5bvx1

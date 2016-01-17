@@ -1,0 +1,462 @@
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/nokogiri-1.6.6.2/ext/nokogiri
+/usr/bin/ruby2.0 -r ./siteconf20160112-17862-1yj8r2w.rb extconf.rb --use-system-libraries
+checking if the C compiler accepts ... yes
+Building nokogiri using system libraries.
+libxml2 version 2.9.2 or later is highly recommended, but proceeding anyway.
+checking for xmlParseDoc() in libxml/parser.h... yes
+checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
+checking for exsltFuncRegister() in libexslt/exslt.h... yes
+checking for xmlHasFeature()... yes
+checking for xmlFirstElementChild()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetValidStructuredErrors()... yes
+checking for xmlSchemaSetValidStructuredErrors()... yes
+checking for xmlSchemaSetParserStructuredErrors()... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/rails/HikeRails/vendor/bundle/ruby/2.0/extensions/x86_64-linux/2.0/nokogiri-1.6.6.2/mkmf.log
+
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/nokogiri-1.6.6.2/ext/nokogiri
+make "DESTDIR=" clean
+rm -f 
+rm -f nokogiri.so  *.o  *.bak mkmf.log .*.time
+
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/nokogiri-1.6.6.2/ext/nokogiri
+make "DESTDIR="
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o html_sax_parser_context.o -c html_sax_parser_context.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_sax_parser_context.h:4,
+                 from html_sax_parser_context.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_sax_parser_context.o -c xml_sax_parser_context.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_sax_parser_context.h:4,
+                 from xml_sax_parser_context.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o html_sax_push_parser.o -c html_sax_push_parser.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_sax_push_parser.h:4,
+                 from html_sax_push_parser.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_xpath_context.o -c xml_xpath_context.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_xpath_context.h:4,
+                 from xml_xpath_context.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xslt_stylesheet.o -c xslt_stylesheet.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xslt_stylesheet.h:4,
+                 from xslt_stylesheet.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o html_document.o -c html_document.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_document.h:4,
+                 from html_document.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_dtd.o -c xml_dtd.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_dtd.h:4,
+                 from xml_dtd.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_processing_instruction.o -c xml_processing_instruction.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_processing_instruction.h:4,
+                 from xml_processing_instruction.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_document_fragment.o -c xml_document_fragment.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_document_fragment.h:4,
+                 from xml_document_fragment.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_entity_decl.o -c xml_entity_decl.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_entity_decl.h:4,
+                 from xml_entity_decl.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o html_element_description.o -c html_element_description.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_element_description.h:4,
+                 from html_element_description.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+html_element_description.c: In function ‘get_description’:
+html_element_description.c:252:40: warning: cast discards ‘__attribute__((const))’ qualifier from pointer target type [-Wcast-qual]
+   return Data_Wrap_Struct(klass, 0, 0, (void *)description);
+                                        ^
+/usr/include/ruby/2.0/ruby/ruby.h:1008:35: note: in definition of macro ‘Data_Wrap_Struct’
+     rb_data_object_alloc((klass),(sval),(RUBY_DATA_FUNC)(mark),(RUBY_DATA_FUNC)(free))
+                                   ^
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_node.o -c xml_node.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_node.h:4,
+                 from xml_node.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+xml_node.c: In function ‘reparent_node_with’:
+xml_node.c:168:7: warning: enumeration value ‘XML_ATTRIBUTE_NODE’ not handled in switch [-Wswitch]
+       switch (reparentee->type) {
+       ^
+xml_node.c:168:7: warning: enumeration value ‘XML_ENTITY_NODE’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_DOCUMENT_FRAG_NODE’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_NOTATION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_HTML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_DTD_NODE’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_ELEMENT_DECL’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_ATTRIBUTE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_ENTITY_DECL’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_NAMESPACE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_XINCLUDE_START’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_XINCLUDE_END’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_DOCB_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_ATTRIBUTE_NODE’ not handled in switch [-Wswitch]
+       switch (reparentee->type) {
+       ^
+xml_node.c:186:7: warning: enumeration value ‘XML_ENTITY_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_DOCUMENT_TYPE_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_DOCUMENT_FRAG_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_NOTATION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_HTML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_DTD_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_ELEMENT_DECL’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_ATTRIBUTE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_ENTITY_DECL’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_NAMESPACE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_XINCLUDE_START’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_XINCLUDE_END’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_DOCB_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_ELEMENT_NODE’ not handled in switch [-Wswitch]
+       switch (reparentee->type) {
+       ^
+xml_node.c:197:7: warning: enumeration value ‘XML_ATTRIBUTE_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_CDATA_SECTION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_ENTITY_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_PI_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_COMMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_DOCUMENT_TYPE_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_DOCUMENT_FRAG_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_NOTATION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_HTML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_DTD_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_ELEMENT_DECL’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_ATTRIBUTE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_ENTITY_DECL’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_NAMESPACE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_XINCLUDE_START’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_XINCLUDE_END’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_DOCB_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_CDATA_SECTION_NODE’ not handled in switch [-Wswitch]
+     switch (parent->type) {
+     ^
+xml_node.c:165:5: warning: enumeration value ‘XML_ENTITY_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_PI_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_COMMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_DOCUMENT_TYPE_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_NOTATION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_DTD_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_ELEMENT_DECL’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_ATTRIBUTE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_ENTITY_DECL’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_NAMESPACE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_XINCLUDE_START’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_XINCLUDE_END’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_DOCB_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_schema.o -c xml_schema.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_schema.h:4,
+                 from xml_schema.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_node_set.o -c xml_node_set.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_node_set.h:4,
+                 from xml_node_set.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+xml_node_set.c: In function ‘dealloc_namespace’:
+xml_node_set.c:9:13: warning: cast discards ‘__attribute__((const))’ qualifier from pointer target type [-Wcast-qual]
+     xmlFree((xmlChar *)ns->href);
+             ^
+xml_node_set.c:11:13: warning: cast discards ‘__attribute__((const))’ qualifier from pointer target type [-Wcast-qual]
+     xmlFree((xmlChar *)ns->prefix);
+             ^
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_document.o -c xml_document.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_document.h:4,
+                 from xml_document.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+xml_document.c: In function ‘set_encoding’:
+xml_document.c:182:12: warning: cast discards ‘__attribute__((const))’ qualifier from pointer target type [-Wcast-qual]
+       free((char *) doc->encoding); /* this may produce a gcc cast warning */
+            ^
+xml_document.c: In function ‘canonicalize’:
+xml_document.c:537:15: warning: cast discards ‘__attribute__((const))’ qualifier from pointer target type [-Wcast-qual]
+       ns[i] = (xmlChar*) ptr;
+               ^
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_sax_parser.o -c xml_sax_parser.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_sax_parser.h:4,
+                 from xml_sax_parser.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_encoding_handler.o -c xml_encoding_handler.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_encoding_handler.h:4,
+                 from xml_encoding_handler.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_cdata.o -c xml_cdata.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_cdata.h:4,
+                 from xml_cdata.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o nokogiri.o -c nokogiri.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from nokogiri.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_io.o -c xml_io.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_io.h:4,
+                 from xml_io.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_comment.o -c xml_comment.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_comment.h:4,
+                 from xml_comment.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_libxml2_hacks.o -c xml_libxml2_hacks.c
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o html_entity_lookup.o -c html_entity_lookup.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_entity_lookup.h:4,
+                 from html_entity_lookup.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_namespace.o -c xml_namespace.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_namespace.h:4,
+                 from xml_namespace.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_attribute_decl.o -c xml_attribute_decl.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_attribute_decl.h:4,
+                 from xml_attribute_decl.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_sax_push_parser.o -c xml_sax_push_parser.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_sax_push_parser.h:4,
+                 from xml_sax_push_parser.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_element_content.o -c xml_element_content.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_element_content.h:4,
+                 from xml_element_content.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_element_decl.o -c xml_element_decl.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_element_decl.h:4,
+                 from xml_element_decl.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_relax_ng.o -c xml_relax_ng.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_relax_ng.h:4,
+                 from xml_relax_ng.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_entity_reference.o -c xml_entity_reference.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_entity_reference.h:4,
+                 from xml_entity_reference.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_text.o -c xml_text.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_text.h:4,
+                 from xml_text.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_syntax_error.o -c xml_syntax_error.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_syntax_error.h:4,
+                 from xml_syntax_error.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_attr.o -c xml_attr.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_attr.h:4,
+                 from xml_attr.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -m64 -o xml_reader.o -c xml_reader.c
+In file included from /usr/include/ruby/2.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_reader.h:4,
+                 from xml_reader.c:1:
+/usr/include/ruby/2.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+      ^
+/usr/include/ruby/2.0/ruby/ruby.h:777:6: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+rm -f nokogiri.so
+gcc -shared -o nokogiri.so html_sax_parser_context.o xml_sax_parser_context.o html_sax_push_parser.o xml_xpath_context.o xslt_stylesheet.o html_document.o xml_dtd.o xml_processing_instruction.o xml_document_fragment.o xml_entity_decl.o html_element_description.o xml_node.o xml_schema.o xml_node_set.o xml_document.o xml_sax_parser.o xml_encoding_handler.o xml_cdata.o nokogiri.o xml_io.o xml_comment.o xml_libxml2_hacks.o html_entity_lookup.o xml_namespace.o xml_attribute_decl.o xml_sax_push_parser.o xml_element_content.o xml_element_decl.o xml_relax_ng.o xml_entity_reference.o xml_text.o xml_syntax_error.o xml_attr.o xml_reader.o -L. -L/usr/lib64 -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -m64  -L/usr/lib64/ruby/2.0 -lruby  -lxml2 -lxslt -lz -ldl -lm -lxml2 -lexslt -lxslt -lz -lm -lgcrypt -ldl -lgpg-error -lxml2 -lpthread -lrt -ldl -lcrypt -lm   -lc 
+/usr/bin/ruby2.0 ./extconf.rb --clean --disable-static
+Cleaning files only used during build.
+rm -rf /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/nokogiri-1.6.6.2/ports/archives
+
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/nokogiri-1.6.6.2/ext/nokogiri
+make "DESTDIR=" install
+/bin/mkdir -p ./.gem.20160112-17862-1c5b56g/nokogiri
+exit > .RUBYARCHDIR.time
+/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20160112-17862-1c5b56g/nokogiri

@@ -5,9 +5,9 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
-  pool: 5
-  timeout: 5000
+ adapter: sqlite3
+ pool: 5
+ timeout: 5000
 
 development:
   adapter: mysql2
@@ -17,7 +17,7 @@ development:
   timeout: 5000
   username: railsuser
   password: 1106
-  socket: /tmp/mysql.sock
+  #socket: /tmp/mysql.sock
   #<<: *default
   #database: db/development.sqlite3
 
@@ -37,4 +37,4 @@ production:
   timeout: 5000
   username: railsuser
   password: 1106
-  socket: /tmp/mysql.sock
+  #socket: /tmp/mysql.sock
