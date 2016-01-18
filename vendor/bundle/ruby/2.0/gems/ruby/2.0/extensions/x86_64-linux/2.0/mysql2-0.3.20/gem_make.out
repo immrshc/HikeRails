@@ -1,0 +1,42 @@
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/ruby/2.0/gems/mysql2-0.3.20/ext/mysql2
+/usr/bin/ruby2.0 -r ./siteconf20160118-2579-1lmtcsa.rb extconf.rb
+checking for ruby/thread.h... yes
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+checking for rb_thread_blocking_region()... yes
+checking for rb_wait_for_single_fd()... yes
+checking for rb_hash_dup()... yes
+checking for rb_intern3()... yes
+-----
+Using mysql_config at /usr/bin/mysql_config
+-----
+checking for mysql.h... yes
+checking for errmsg.h... yes
+checking for mysqld_error.h... yes
+-----
+Setting rpath to /usr/lib64/mysql
+-----
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/ruby/2.0/extensions/x86_64-linux/2.0/mysql2-0.3.20/mkmf.log
+
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/ruby/2.0/gems/mysql2-0.3.20/ext/mysql2
+make "DESTDIR=" clean
+rm -f 
+rm -f mysql2.so  *.o  *.bak mkmf.log .*.time
+
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/ruby/2.0/gems/mysql2-0.3.20/ext/mysql2
+make "DESTDIR="
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -I/usr/include/mysql55 -DHAVE_RUBY_THREAD_H -DHAVE_RB_THREAD_CALL_WITHOUT_GVL -DHAVE_RB_THREAD_BLOCKING_REGION -DHAVE_RB_WAIT_FOR_SINGLE_FD -DHAVE_RB_HASH_DUP -DHAVE_RB_INTERN3 -DHAVE_MYSQL_H -DHAVE_ERRMSG_H -DHAVE_MYSQLD_ERROR_H    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC -Wall -funroll-loops -m64 -o client.o -c client.c
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -I/usr/include/mysql55 -DHAVE_RUBY_THREAD_H -DHAVE_RB_THREAD_CALL_WITHOUT_GVL -DHAVE_RB_THREAD_BLOCKING_REGION -DHAVE_RB_WAIT_FOR_SINGLE_FD -DHAVE_RB_HASH_DUP -DHAVE_RB_INTERN3 -DHAVE_MYSQL_H -DHAVE_ERRMSG_H -DHAVE_MYSQLD_ERROR_H    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC -Wall -funroll-loops -m64 -o mysql2_ext.o -c mysql2_ext.c
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -I/usr/include/mysql55 -DHAVE_RUBY_THREAD_H -DHAVE_RB_THREAD_CALL_WITHOUT_GVL -DHAVE_RB_THREAD_BLOCKING_REGION -DHAVE_RB_WAIT_FOR_SINGLE_FD -DHAVE_RB_HASH_DUP -DHAVE_RB_INTERN3 -DHAVE_MYSQL_H -DHAVE_ERRMSG_H -DHAVE_MYSQLD_ERROR_H    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC -Wall -funroll-loops -m64 -o result.o -c result.c
+gcc -I. -I/usr/include/ruby/2.0 -I/usr/include/ruby/2.0/ruby/backward -I/usr/include/ruby/2.0 -I. -I/usr/include/mysql55 -DHAVE_RUBY_THREAD_H -DHAVE_RB_THREAD_CALL_WITHOUT_GVL -DHAVE_RB_THREAD_BLOCKING_REGION -DHAVE_RB_WAIT_FOR_SINGLE_FD -DHAVE_RB_HASH_DUP -DHAVE_RB_INTERN3 -DHAVE_MYSQL_H -DHAVE_ERRMSG_H -DHAVE_MYSQLD_ERROR_H    -fPIC -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -mtune=generic -fPIC -Wall -funroll-loops -m64 -o infile.o -c infile.c
+rm -f mysql2.so
+gcc -shared -o mysql2.so client.o mysql2_ext.o result.o infile.o -L. -L/usr/lib64 -L. -fstack-protector -rdynamic -Wl,-export-dynamic -Wl,-rpath,/usr/lib64/mysql  -m64  -L/usr/lib64/ruby/2.0 -lruby -L/usr/lib64/mysql -lmysqlclient -lpthread -lz -lm -lssl -lcrypto -ldl  -lpthread -lrt -ldl -lcrypt -lm   -lc
+
+current directory: /home/rails/HikeRails/vendor/bundle/ruby/2.0/gems/ruby/2.0/gems/mysql2-0.3.20/ext/mysql2
+make "DESTDIR=" install
+/bin/mkdir -p ./.gem.20160118-2579-f9hgo3/mysql2
+exit > .RUBYARCHDIR.time
+/usr/bin/install -c -m 0755 mysql2.so ./.gem.20160118-2579-f9hgo3/mysql2

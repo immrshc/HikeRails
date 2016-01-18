@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'aws-sdk'
+gem 'jmespath', '~> 1.1.3'
 gem 'mysql2', '~> 0.3.20'
+#gem 'therubyracer', '~> 0.12.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
