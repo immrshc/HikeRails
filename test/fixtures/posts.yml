@@ -6,6 +6,8 @@ post_1:
   text: これがはじめての投稿です
   latitude: 35.685175
   longitude: 139.7528
+  image_key: "ShoichiImamura/Post/Image01.jpg"
+  ctype: "image/jpeg"
 
 post_2:
   id: 2
@@ -13,6 +15,8 @@ post_2:
   text: これが2度目の投稿です
   latitude: 35.685654
   longitude: 139.756073
+  image_key: "ShoichiImamura/Post/Image02.jpg"
+  ctype: "image/jpeg"
 
 post_3:
   id: 3
@@ -20,6 +24,8 @@ post_3:
   text: This is my first posting!
   latitude: 35.680634
   longitude: 139.766373
+  image_key: "ShoichiImamura/Post/Image03.jpg"
+  ctype: "image/jpeg"
 
 post_4:
   id: 4
@@ -27,6 +33,8 @@ post_4:
   text: This is my second posting!
   latitude: 35.683632
   longitude: 139.744915
+  image_key: "ShoichiImamura/Post/Image05.jpg"
+  ctype: "image/jpeg"
 
 post_5:
   id: 5
@@ -34,6 +42,8 @@ post_5:
   text: Hello World!
   latitude: 35.678194
   longitude: 139.744057
+  image_key: "ShoichiImamura/Post/Image06.jpg"
+  ctype: "image/jpeg"
 
 post_6:
   id: 6
@@ -41,4 +51,5 @@ post_6:
   text: Welcome to Hike!
   latitude: 35.681540
   longitude: 139.748692
-
+  image_key: "ShoichiImamura/Post/Image01.jpg"
+  ctype: "image/jpeg"

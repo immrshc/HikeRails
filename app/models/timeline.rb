@@ -12,7 +12,7 @@ class Timeline
 		#postインスタンスを格納する
 		self.post = post
 		#show_imageメソッドを実行するためのURLを指定する
-		if post.image then
+		if post.image_key then
 			self.imageURL = "http://localhost:3000/post/show_image?post[id]=#{post.id}"
 			#self.imageURL = "http://http://54.238.212.122:3000/post/show_image?post[id]=#{post.id}"
 		else

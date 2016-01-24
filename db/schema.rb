@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160117013929) do
+ActiveRecord::Schema.define(version: 20160124090348) do
 
   create_table "favorites", force: :cascade do |t|
     t.datetime "created_at",           null: false
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20160117013929) do
     t.text     "text",       limit: 65535
     t.float    "latitude",   limit: 24
     t.float    "longitude",  limit: 24
-    t.binary   "image",      limit: 65535
+    t.string   "image_key",  limit: 255
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
     t.string   "ctype",      limit: 255

@@ -19,40 +19,36 @@ class PostController < ApplicationController
 
 	def upload_process
 
-		logger.debug("===================debug===================")
-		logger.debug(session[:post_id])
-
 		if post_id = session[:post_id] then
-			image = params[:image].read
-			ctype = params[:image].content_type
+			image = params[:image]
+
 			post = Post.find_by(id: post_id)
-  			
-			if post.update(image: image, ctype: ctype) then
+
+			if Post.uploadToS3(image, post_id) then
 				@post = post
 				@result = true
-				logger.debug("===================画像を保存===================")
+				logger.debug("===================画像を投稿===================")
+			else
+				@result = false
+				logger.debug("===================セッションがnil===================")
 			end
+
 		else
 			@result = false
 			logger.debug("===================セッションがnil===================")
 		end
 
 		session[:post] = nil
-
 	end
 
 	def show_image
-
 		post_id = post_params[:id]
-		@post = Post.find_by(id: post_id)
-		if @post.image && @post.ctype then
-			send_data @post.image, type: @post.ctype, disposition: :inline
-		else
-			@post = Post.find_by(id: 1)
-			send_data @post.image, type: @post.ctype, disposition: :inline
-			#send_data '#{RAILS_ROOT}/', type: @post.ctype, disposition: :inline
-		end
-
+		ctype = Post.find_by(id: post_id).ctype
+		res = Post.downloadFromS3(post_id)
+		logger.debug("===================ctype===================")
+		logger.debug(ctype)
+		#ファイル名で取得しているので、名前が重複するとmetadata["content_type"]がnilになることがある
+		send_data res.body.read, type: ctype, disposition: :inline
 	end
 
 	private 

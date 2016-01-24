@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'dotenv-rails'
 gem 'aws-sdk'
 gem 'jmespath', '~> 1.1.3'
 gem 'mysql2', '~> 0.3.20'
