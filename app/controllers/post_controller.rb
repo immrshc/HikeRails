@@ -3,6 +3,7 @@ class PostController < ApplicationController
 	#AlamofireでStrongParametersができれば問題ない
 	protect_from_forgery :except => [:upload_process]
 
+	#アップロードされた投稿文の保存
 	def create 
 		user = User.find_by(token: user_params[:token], username: user_params[:username])
 		post = Post.new(post_params)
@@ -17,6 +18,7 @@ class PostController < ApplicationController
 
 	end
 
+	#アップロードされた画像のS3への保存	
 	def upload_process
 
 		if post_id = session[:post_id] then
@@ -41,6 +43,7 @@ class PostController < ApplicationController
 		session[:post] = nil
 	end
 
+	#S3からの画像のダウンロード
 	def show_image
 		post_id = post_params[:id]
 		ctype = Post.find_by(id: post_id).ctype

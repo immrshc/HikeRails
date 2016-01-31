@@ -8,6 +8,8 @@ post_1:
   longitude: 139.7528
   image_key: "ShoichiImamura/Post/Image01.jpg"
   ctype: "image/jpeg"
+  image_width: 667.0
+  image_height: 1000.0
 
 post_2:
   id: 2
@@ -17,6 +19,9 @@ post_2:
   longitude: 139.756073
   image_key: "ShoichiImamura/Post/Image02.jpg"
   ctype: "image/jpeg"
+  image_width: 900.0
+  image_height: 1600.0
+
 
 post_3:
   id: 3
@@ -26,6 +31,8 @@ post_3:
   longitude: 139.766373
   image_key: "ShoichiImamura/Post/Image03.jpg"
   ctype: "image/jpeg"
+  image_width: 320.0
+  image_height: 568.0
 
 post_4:
   id: 4
@@ -35,6 +42,8 @@ post_4:
   longitude: 139.744915
   image_key: "ShoichiImamura/Post/Image05.jpg"
   ctype: "image/jpeg"
+  image_width: 872.0
+  image_height: 1634.0
 
 post_5:
   id: 5
@@ -44,6 +53,8 @@ post_5:
   longitude: 139.744057
   image_key: "ShoichiImamura/Post/Image06.jpg"
   ctype: "image/jpeg"
+  image_width: 640.0
+  image_height: 1136.0
 
 post_6:
   id: 6
@@ -53,3 +64,5 @@ post_6:
   longitude: 139.748692
   image_key: "ShoichiImamura/Post/Image01.jpg"
   ctype: "image/jpeg"
+  image_width: 667.0
+  image_height: 1000.0

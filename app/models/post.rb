@@ -1,3 +1,5 @@
+require 'fastimage'
+
 class Post < ActiveRecord::Base
   belongs_to :user
   validates :user, presence: true
@@ -15,6 +17,9 @@ class Post < ActiveRecord::Base
 
       post.image_key = "#{username}/Post/#{image.original_filename}"
       post.ctype = image.content_type
+      post.image_width = FastImage.size(image.path)[0]
+      post.image_height = FastImage.size(image.path)[1]
+
 
       if post.save then
         Dotenv.load

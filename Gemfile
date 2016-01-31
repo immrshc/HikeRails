@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'fastimage'
 gem 'dotenv-rails'
 gem 'aws-sdk'
 gem 'jmespath', '~> 1.1.3'
