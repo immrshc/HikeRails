@@ -2,32 +2,19 @@ require 'fastimage'
 
 class Image < ActiveRecord::Base
 
-	#attr_accessor :image
 	attr_accessor :content_type
 	attr_accessor :size
 	attr_accessor :path
 	attr_accessor :original_filename
 
 	#after_actionはApplicationControllerを継承している時のみ使える
-	#initializerは引数にフィールドと関係ないハッシュを入れるとエラーになる
-	#なぜかプロパティが失われる
-=begin
-	def initializer(image)
-		@image = image
-		@content_type = @image.content_type#nil
-		@size = @image.size#nil
-		@path = @image.path#nil
-		@original_filename = @image.original_filename#nil
-	end
-=end
-	
-	#initializer
-	def initializer(args)
+	def initialize(args)
 		@content_type = args[:content_type]
 		@size = args[:size]
 		@path = args[:path]
 		@original_filename = args[:original_filename]
 	end
+
 	#check uploadable
 	def file_invalid?
     	ps = ['image/jpeg', 'image/jpg', 'image/gif', 'image/png']
