@@ -11,45 +11,36 @@ class PostController < ApplicationController
 		if post.save then
 			session[:post_id] = post.id
 			@post = post
-			@result = true	
+			@result = true
 		else
 			@result = false
 		end
-
 	end
 
+	#上記のメソッドと分離する意味があるのか再考する
+	#Xcode側での実行に依存するので改善する
 	#アップロードされた画像のS3への保存	
 	def upload_process
-
 		if post_id = session[:post_id] then
-			image = params[:image]
-
 			post = Post.find_by(id: post_id)
-
-			if Post.uploadToS3(image, post_id) then
+			image = params[:image]
+			if PostForImage.uploadToS3(image, post) then
 				@post = post
 				@result = true
-				logger.debug("===================画像を投稿===================")
 			else
 				@result = false
-				logger.debug("===================セッションがnil===================")
 			end
-
 		else
 			@result = false
-			logger.debug("===================セッションがnil===================")
 		end
-
 		session[:post] = nil
 	end
 
 	#S3からの画像のダウンロード
 	def show_image
-		post_id = post_params[:id]
-		ctype = Post.find_by(id: post_id).ctype
-		res = Post.downloadFromS3(post_id)
-		logger.debug("===================ctype===================")
-		logger.debug(ctype)
+		post = Post.find_by(id: post_params[:id])
+		ctype = post.ctype
+		res = PostForImage.downloadFromS3(post)
 		#ファイル名で取得しているので、名前が重複するとmetadata["content_type"]がnilになることがある
 		send_data res.body.read, type: ctype, disposition: :inline
 	end

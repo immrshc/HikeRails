@@ -5,8 +5,6 @@ class TimelineController < ApplicationController
 		timeLineArray = []
 		user_token = user_params[:token]
 		user = User.find_by_token(user_token)
-		logger.debug('================================')
-		logger.debug(user)
 		if user then
 			user_id = user.id
 			posts = Post.all

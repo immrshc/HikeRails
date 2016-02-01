@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160131191210) do
+ActiveRecord::Schema.define(version: 20160201093056) do
 
   create_table "favorites", force: :cascade do |t|
     t.datetime "created_at",           null: false
@@ -22,6 +22,16 @@ ActiveRecord::Schema.define(version: 20160131191210) do
 
   add_index "favorites", ["post_id"], name: "index_favorites_on_post_id", using: :btree
   add_index "favorites", ["user_id"], name: "index_favorites_on_user_id", using: :btree
+
+  create_table "images", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "post_for_images", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "posts", force: :cascade do |t|
     t.integer  "user_id",      limit: 4
